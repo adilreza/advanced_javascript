@@ -1,0 +1,49 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Es6 arrow function</title>
+  </head>
+  <body>
+
+    <h3 id="use_me"></h3>
+    <h3 id="use_me2"></h3>
+    <h3 id="use_me3"></h3>
+
+
+
+    <<script type="text/javascript">
+      function normal_function()
+      {
+        document.getElementById('use_me').innerHTML="Hello adil---";
+      }
+      normal_function()
+
+
+      // just reduce and make shortest nothing else
+
+
+      arrow_func = () =>
+      {
+        document.getElementById('use_me2').innerHTML="Hello adil this from arrow"
+      }
+
+      arrow_function_with_param = (fname, lname)=>
+      {
+        var fullname = fname +" " + lname;
+        document.getElementById("use_me3").innerHTML = fullname;
+      }
+
+      function call_arrow_function()
+      {
+        arrow_func()
+        arrow_function_with_param("adil" , "reza")
+      }
+
+      call_arrow_function()
+
+
+    </script>
+
+  </body>
+</html>
