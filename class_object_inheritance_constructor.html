@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>practice of class instance inheritance</title>
+  </head>
+  <body>
+
+    <h3 id="test1"></h3>
+    <h3 id="test2"></h3>
+    <h3 id="test3"></h3>
+
+
+
+    <script type="text/javascript">
+      class parent_class{
+        constructor()
+        {
+          document.getElementById("test2").innerHTML="this is from constructor";
+        }
+        func2(){
+          document.getElementById("test1").innerHTML="this is from function2 parent class"
+        }
+        func1(){
+          document.getElementById("test2").innerHTML = "This is from func1 parent class";
+        }
+        function_take_value(fname,lname)
+        {
+          var full_name = fname+ lname;
+          document.getElementById("test3").innerHTML = "Hello "+ full_name;
+        }
+      }
+
+      class child_class extends parent_class{
+
+        func3()
+        {
+          document.getElementById("test2").innerHTML = "This is from func3 from  child class";
+        }
+      }
+
+
+
+
+      myobj = new parent_class();
+      myobj.func2();
+      myobject2 = new child_class();
+      myobject2.function_take_value("adil", " reza")
+
+
+    </script>
+
+  </body>
+</html>
