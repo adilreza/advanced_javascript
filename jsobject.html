@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p id="demo"></p>
+<br>
+<h6 id="demo0"></h6>
+<br>
+<p id="demo1"></p>
+<br>
+<p id="demo2"></p>
+
+<script>
+// Create an object:
+var car = {type:"BMW", model:"500", color:"white"};
+
+// Display some data from the object:
+document.getElementById("demo").innerHTML = "The car type is " + car.type;
+document.getElementById("demo1").innerHTML = "The car model is " + car['model'];
+// it's doesn't even matter for single and double coutation
+document.getElementById("demo2").innerHTML = "The car color is " + car["color"];
+
+</script>
+
+<script>
+// Create an object:
+var person = {
+  firstName: "adil",
+  lastName : "reza",
+  id     : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+// Display data from the object:
+document.getElementById("demo0").innerHTML = person.fullName();
+//without () it will return the function defination 
+</script>
+
+
+</body>
+</html>
