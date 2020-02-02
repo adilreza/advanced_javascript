@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p id="demo"></p>
+
+<script>
+
+    var person = [];//way to define empty array 
+    var points = new Array(40, 100, 1, 5, 25, 10);// new keyword also support for creating a array
+    //person["firstName"] = "John"; not supported , JavaScript does not support associativity or name indexed array
+    person[0] = "John";
+    person[1] = "Doe";
+    person[2] = 46; 
+    document.getElementById("demo").innerHTML =
+    person[0] + " " + person.length;
+
+</script>
+
+</body>
+</html>
+
